@@ -13,23 +13,6 @@ We use historical electricity consumption data from [dataset source], which incl
 
 The data is preprocessed to handle missing values, convert time-based features, and standardize numeric columns.
 
-## Models Used
-We employ several models to compare prediction accuracy:
-
-- **ARIMA**: Best for univariate time series forecasting and capturing seasonal trends.
-- **LSTM**: A neural network model for capturing long-term dependencies in time series data.
-- **XGBoost**: A powerful gradient boosting model to make accurate predictions using multiple features.
-- **Random Forest & Decision Trees**: Ensemble methods to capture complex feature interactions.
-
-### Model Comparison Table:
-| Model         | MAE   | MSE   | R²   |
-|---------------|-------|-------|------|
-| ARIMA         | 12.34 | 15.67 | 0.89 |
-| LSTM          | 10.23 | 13.45 | 0.91 |
-| XGBoost       | 9.87  | 12.56 | 0.92 |
-| Decision Tree | 11.78 | 14.23 | 0.88 |
-| Random Forest | 10.98 | 13.97 | 0.90 |
-
 ### Workflow
 1. **Data Preprocessing**: Handling missing values, time-based feature conversion, and normalization.
 2. **Model Training**: Each model is trained on historical consumption data and evaluated using MAE, MSE, and R² metrics.
@@ -52,7 +35,7 @@ Similarly, results for the **LSTM** and **XGBoost** models are shown below:
 ## Future Work
 In future phases, we plan to:
 - **Improve Model Accuracy**: Fine-tune hyperparameters and try other models like SARIMA and Prophet.
-- **Incorporate Real-Time Data**: Implement real-time data integration for continuous forecasting.
+- **Incorporate Streamlit**
 - **Expand Features**: Add additional features such as temperature, holiday effects, and economic indicators.
 
 ## Conclusion
